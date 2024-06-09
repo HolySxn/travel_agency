@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destinations - Travel Agency</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/main/main.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">GlobeTravel</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="/main/main.htm" data-lang="nav-home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="destinations.html" data-lang="nav-destinations">Destinations</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/booking/booking.html" data-lang="nav-booking">Hotel Booking <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/flights/flights.html" data-lang="nav-flight">Flight</a>
+                </li>
+                <li class="nav-item">
+                    <button class="btn btn-outline-primary ml-2" onclick="setLanguage('en')">EN</button>
+                </li>
+                <li class="nav-item">
+                    <button class="btn btn-outline-primary ml-2" onclick="setLanguage('ru')">RU</button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Destinations Section -->
+    <div class="container my-5">
+        <h2 class="text-center" data-lang="destinations-title">Popular Destinations</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <a href="/tours/paris.html" class="card-link">
+                    <div class="card">
+                        <img src="https://sportishka.com/uploads/posts/2023-11/1701325390_sportishka-com-p-parizh-turisticheskie-mesta-oboi-73.jpg" class="card-img-top" alt="Paris">
+                        <div class="card-body">
+                            <h5 class="card-title" data-lang="destination-1-title">Paris, France</h5>
+                            <p class="card-text" data-lang="destination-1-text">Experience the romantic city of lights with its stunning architecture and rich culture.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-4">
+                <a href="#" class="card-link">
+                    <div class="card">
+                        <img src="https://wallbox.ru/wallpapers/main/201249/tokio-fudziyama-gora-sakura-vesna-pagoda-9a003bc.jpg" class="card-img-top" alt="Tokyo">
+                        <div class="card-body">
+                            <h5 class="card-title" data-lang="destination-2-title">Tokyo, Japan</h5>
+                            <p class="card-text" data-lang="destination-2-text">Discover the perfect blend of traditional and modern in Japan's vibrant capital.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-4">
+                <a href="#" class="card-link">
+                    <div class="card">
+                        <img src="https://i.pinimg.com/originals/e9/3f/11/e93f11b14a0c0806c9e29633bb141fb7.jpg" class="card-img-top" alt="New York">
+                        <div class="card-body">
+                            <h5 class="card-title" data-lang="destination-3-title">New York, USA</h5>
+                            <p class="card-text" data-lang="destination-3-text">Explore the city that never sleeps with its iconic landmarks and bustling streets.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-md-4">
+                <a href="#" class="card-link">
+                    <div class="card">
+                        <img src="https://c3eeedc15c0611d84c18-6d9497f165d09befa49b878e755ba3c4.ssl.cf4.rackcdn.com/photos/blogs/article-440-1687270258.jpg" class="card-img-top" alt="Sydney">
+                        <div class="card-body">
+                            <h5 class="card-title" data-lang="destination-4-title">Sydney, Australia</h5>
+                            <p class="card-text" data-lang="destination-4-text">Enjoy the stunning harbor, beautiful beaches, and vibrant cultural scene.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-4">
+                <a href="#" class="card-link">
+                    <div class="card">
+                        <img src="https://royalairportconcierge.com/wp-content/uploads/2020/07/shutterstock_789412159-1-1.jpg" class="card-img-top" alt="Rome">
+                        <div class="card-body">
+                            <h5 class="card-title" data-lang="destination-5-title">Rome, Italy</h5>
+                            <p class="card-text" data-lang="destination-5-text">Step back in time and explore ancient ruins, majestic architecture, and delicious cuisine.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-4">
+                <a href="#" class="card-link">
+                    <div class="card">
+                        <img src="https://wallpapercosmos.com/w/full/4/2/d/678533-2560x1579-desktop-hd-cape-town-south-africa-wallpaper-image.jpg" class="card-img-top" alt="Cape Town">
+                        <div class="card-body">
+                            <h5 class="card-title" data-lang="destination-6-title">Cape Town, South Africa</h5>
+                            <p class="card-text" data-lang="destination-6-text">Discover breathtaking landscapes, diverse wildlife, and rich cultural heritage.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-light text-center py-4" id="contacts">
+        <div class="container">
+            <p>&copy; 2024 GlobeTravel. All rights reserved.</p>
+            <p>Contact us: example@example.com | +123456789</p>
+            <p>Follow us on:
+                <a href="#">Facebook</a> |
+                <a href="#">Twitter</a> |
+                <a href="#">Instagram</a>
+            </p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="destination.js"></script>
+</body>
+</html>

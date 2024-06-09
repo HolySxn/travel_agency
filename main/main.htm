@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Agency</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">GlobeTravel</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#" data-lang="nav-home">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/destinations/destinations.html" data-lang="nav-destinations">Tours</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#services" data-lang="nav-services">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#testimonials" data-lang="nav-testimonials">Testimonials</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contacts" data-lang="nav-contact">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <button class="btn btn-outline-primary ml-2" onclick="setLanguage('en')">EN</button>
+                </li>
+                <li class="nav-item">
+                    <button class="btn btn-outline-primary ml-2" onclick="setLanguage('ru')">RU</button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="jumbotron jumbotron-fluid text-center">
+        <div class="container">
+            <h1 class="display-4" data-lang="hero-title">Explore the World with Us</h1>
+            <p class="lead" data-lang="hero-subtitle">Your adventure begins here. Discover new destinations, cultures, and experiences with our personalized travel packages.</p>
+            <a class="btn btn-primary btn-lg" href="/destinations/destinations.html" role="button" data-lang="hero-button">Learn More</a>
+        </div>
+    </div>
+
+    <!-- Services Section -->
+    <div id="services" class="container my-5"> 
+        <h2 class="text-center" data-lang="services-title">Our Services</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <a href="/destinations/destinations.html" class="card-link">
+                    <div class="card">
+                        <img src="https://i.pinimg.com/originals/59/e0/9b/59e09b2791980e268d38ef3694be3a6e.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title" data-lang="service-1-title">Customized Tours</h5>
+                            <p class="card-text" data-lang="service-1-text">Tailor-made tours to suit your preferences and schedule.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-4">
+                <a href="/booking/booking.html" class="card-link">
+                    <div class="card">
+                        <img src="https://redstravel.com/wp-content/uploads/2019/12/3-14.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title" data-lang="service-2-title">Hotel Bookings</h5>
+                            <p class="card-text" data-lang="service-2-text">Comfortable and affordable accommodations worldwide.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-4">
+                <a href="/flights/flights.html" class="card-link">
+                    <div class="card">
+                        <img src="https://sportishka.com/uploads/posts/2023-11/1701367185_sportishka-com-p-krasivii-vzlet-samoleta-krasivo-6.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title" data-lang="service-3-title">Flight Reservations</h5>
+                            <p class="card-text" data-lang="service-3-text">Book flights with ease and at the best prices.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!--Consultation-->
+    <section id="consultation" class="py-5 text-center">
+        <div class="consultation-bg">
+          <div class="container consultation-box">
+            <div class="row">
+              <div class="col-lg-12">
+                <h2 class="section-heading text-uppercase" data-lang="consultation-title">Consultation</h2>
+                <p class="section-subheading text-muted" data-lang="consultation-subtitle">Ready to plan your next adventure? Schedule a consultation with us!</p>
+                <button class="btn btn-primary btn-xl" id="openConsultationModal" data-lang="consultation-button">Schedule Now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <!-- Consultation Modal -->
+      <div id="consultationModal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h2 class="section-heading text-uppercase" data-lang="consultation-modal-title">Schedule Consultation</h2>
+          <form id="consultationForm">
+            <div class="form-group">
+              <input type="text" class="form-control" id="name" data-lang="consultation-form-name" placeholder="Your Name" required>
+            </div>
+            <div class="form-group">
+              <input type="email" class="form-control" id="email" data-lang="consultation-form-email" placeholder="Your Email Address" required>
+            </div>
+            <div class="form-group">
+              <input type="tel" class="form-control" id="phone" data-lang="consultation-form-phone" placeholder="Your Phone Number" required>
+            </div>
+            <div class="form-group">
+              <textarea class="form-control" id="message" rows="5" data-lang="consultation-form-message" placeholder="Your Message" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" data-lang="consultation-form-submit">Schedule</button>
+          </form>
+        </div>
+      </div>
+      
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="bg-light py-5">
+        <div class="container">
+          <div class="row">
+            <div class="col text-center">
+              <h2 class="section-heading text-uppercase" data-lang="testimonials-title">Testimonials</h2>
+              <p class="section-subheading text-muted" data-lang="testimonials-subtitle">What our customers say about us</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-4">
+              <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+                <img class="img-fluid rounded-circle mb-3" src="img/testimonials-1.jpg" alt="">
+                <h5 data-lang="testimonial-1-name">Mary Johnson</h5>
+                <p class="font-weight-light mb-0" data-lang="testimonial-1-text">"The trip organized by GlobeTravel was beyond my expectations. They took care of every detail, and the experience was seamless. I highly recommend them."</p>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+                <img class="img-fluid rounded-circle mb-3" src="img/testimonials-2.jpg" alt="">
+                <h5 data-lang="testimonial-2-name">John Smith</h5>
+                <p class="font-weight-light mb-0" data-lang="testimonial-2-text">"Thanks to GlobeTravel, my family and I had the most memorable vacation ever. From accommodation to activities, everything was perfectly planned. We can't wait to book with them again!"</p>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+                <img class="img-fluid rounded-circle mb-3" src="img/testimonials-3.jpg" alt="">
+                <h5 data-lang="testimonial-3-name">Sarah Wilson</h5>
+                <p class="font-weight-light mb-0" data-lang="testimonial-3-text">"I've traveled with several agencies before, but none have provided the level of service and personal attention that GlobeTravel did. They truly go above and beyond to ensure their clients have a fantastic experience."</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    <!-- Footer -->
+    <footer class="bg-light text-center py-4" id="contacts">
+        <div class="container">
+            <p>&copy; 2024 GlobeTravel. All rights reserved.</p>
+            <p>Contact us: example@example.com | +123456789</p>
+            <p>Follow us on:
+                <a href="#">Facebook</a> |
+                <a href="#">Twitter</a> |
+                <a href="#">Instagram</a>
+            </p>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,198 @@
+/* styles.css */
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+/* Navbar Styles */
+.navbar {
+    margin-bottom: 20px;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+/* Hero Section Styles */
+.jumbotron {
+    height: 100vh;
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.5), 
+        rgba(0, 0, 0, 0.5)
+      ),
+    url('https://reliefmaster.ru/images/data/gallery/425_big_1620727865_1848.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+}
+
+.jumbotron .btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.jumbotron .btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #004085;
+}
+
+/* Services Section Styles */
+.card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-img-top {
+    flex-shrink: 0; 
+    height: 200px; 
+    object-fit: cover; 
+}
+
+.card-body {
+    flex-grow: 1; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-title {
+    font-weight: bold;
+    color: #007bff;
+}
+
+.card-text {
+    color: #555;
+}
+
+.card:hover {
+    transform: scale(1.05); 
+}
+
+/* consultation */
+.consultation-bg {
+    height: 1000px;
+    background-image: url('https://w.forfun.com/fetch/27/27e5a8ae61367bef288d413d6d2dc4c2.jpeg'); 
+    background-size: cover;
+    background-position: center;
+    padding: 100px 0;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+  }
+
+  .consultation-box {
+    background-color: rgba(255, 255, 255, 0.8); /* Adjust transparency as needed */
+    padding: 40px;
+    border-radius: 10px;
+  }
+  
+/* Modal styles */
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+  }
+  
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+  }
+  
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  
+
+/* Testimonials Section Styles */
+.testimonial {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    max-width: 600px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #007bff;
+    border-radius: 50%;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #f8f9fa;
+    color: #555;
+}
+
+footer a {
+    color: #007bff;
+}
+
+footer a:hover {
+    text-decoration: none;
+    color: #0056b3;
+}
+
+/*flights*/
+.destination-section {
+    margin-bottom: 2rem;
+}
+
+.list-group-item {
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+}
+
+/*carousel*/
+/* Custom styles for the destination section */
+.destination-section {
+    margin-bottom: 2rem;
+}
+
+/* Styling for the list group items */
+.list-group-item {
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+}
+
+/* Hover effect for list group items */
+.list-group-item:hover {
+    background-color: #e2e6ea; /* Slightly darker color */
+    cursor: pointer;
+}
+
+.carousel-item img {
+    height: 500px;
+    object-fit: cover;
+}

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flight Booking - Travel Agency</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/main/main.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">GlobeTravel</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="/main/main.htm">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/destinations/destination.js">Destinations</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/booking/booking.html">Hotel Booking <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="flights.html">Flight</a>
+                </li>
+                <li class="nav-item">
+                    <button class="btn btn-outline-primary ml-2" onclick="setLanguage('en')">EN</button>
+                </li>
+                <li class="nav-item">
+                    <button class="btn btn-outline-primary ml-2" onclick="setLanguage('ru')">RU</button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Flight Search -->
+    <section id="flight-search" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Book Your Flight</h2>
+            <div class="row">
+                <div class="col-md-3">
+                    <input type="text" class="form-control" placeholder="From">
+                </div>
+                <div class="col-md-3">
+                    <input type="text" class="form-control" placeholder="To">
+                </div>
+                <div class="col-md-3">
+                    <input type="date" class="form-control">
+                </div>
+                <div class="col-md-3">
+                    <button class="btn btn-primary btn-block">Search Flights</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Flight Listings by Destination -->
+    <section id="flight-listings" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Available Flights</h2>
+
+            <!-- Destination: New York -->
+            <div class="destination-section">
+                <h3>Flights to New York</h3>
+                <div class="list-group">
+                    <div class="list-group-item">
+                        <h5 class="mb-1">Flight 101</h5>
+                        <p class="mb-1">Depart: 8:00 AM - Arrive: 11:00 AM</p>
+                        <small>Airline: Example Airline</small>
+                    </div>
+                    <div class="list-group-item">
+                        <h5 class="mb-1">Flight 102</h5>
+                        <p class="mb-1">Depart: 1:00 PM - Arrive: 4:00 PM</p>
+                        <small>Airline: Example Airline</small>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Destination: Los Angeles -->
+            <div class="destination-section mt-5">
+                <h3>Flights to Los Angeles</h3>
+                <div class="list-group">
+                    <div class="list-group-item">
+                        <h5 class="mb-1">Flight 201</h5>
+                        <p class="mb-1">Depart: 9:00 AM - Arrive: 12:00 PM</p>
+                        <small>Airline: Example Airline</small>
+                    </div>
+                    <div class="list-group-item">
+                        <h5 class="mb-1">Flight 202</h5>
+                        <p class="mb-1">Depart: 3:00 PM - Arrive: 6:00 PM</p>
+                        <small>Airline: Example Airline</small>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Destination: London -->
+            <div class="destination-section mt-5">
+                <h3>Flights to London</h3>
+                <div class="list-group">
+                    <div class="list-group-item">
+                        <h5 class="mb-1">Flight 301</h5>
+                        <p class="mb-1">Depart: 10:00 AM - Arrive: 8:00 PM</p>
+                        <small>Airline: Example Airline</small>
+                    </div>
+                    <div class="list-group-item">
+                        <h5 class="mb-1">Flight 302</h5>
+                        <p class="mb-1">Depart: 5:00 PM - Arrive: 3:00 AM</p>
+                        <small>Airline: Example Airline</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-light text-center py-4" id="contacts">
+        <div class="container">
+            <p>&copy; 2024 GlobeTravel. All rights reserved.</p>
+            <p>Contact us: example@example.com | +123456789</p>
+            <p>Follow us on:
+                <a href="#">Facebook</a> |
+                <a href="#">Twitter</a> |
+                <a href="#">Instagram</a>
+            </p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

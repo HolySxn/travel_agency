@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paris - Travel Agency</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/main/main.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">GlobeTravel</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="/main/main.htm">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="/destinations/destinations.html">Destinations</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/booking/booking.html">Hotel Booking <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/flights/flights.html">Flight</a>
+                </li>
+                <li class="nav-item">
+                    <button class="btn btn-outline-primary ml-2" onclick="setLanguage('en')">EN</button>
+                </li>
+                <li class="nav-item">
+                    <button class="btn btn-outline-primary ml-2" onclick="setLanguage('ru')">RU</button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Carousel Section -->
+    <section id="paris-carousel" class="py-5">
+        <div class="container">
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="https://w.forfun.com/fetch/54/545e63b291337734b672b54d2ab1d229.jpeg?w=1470&r=0.5625" class="d-block w-100" alt="Eiffel Tower">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Eiffel Tower</h5>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://inessapanosyan.files.wordpress.com/2020/03/secrets20of20louvre201.jpg" class="d-block w-100" alt="Louvre Museum">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Louvre Museum</h5>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://wallpapers.com/images/hd/notre-dame-cathedral-with-christmas-tree-romy8k6eqlm171xi.jpg" class="d-block w-100" alt="Notre-Dame Cathedral">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Notre-Dame Cathedral</h5>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Paris Description -->
+    <section id="paris-description" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Welcome to Paris</h2>
+            <p class="text-center">Paris, the capital city of France, is one of the most popular tourist destinations in the world. Known for its art, culture, and history, Paris offers an array of attractions including the Eiffel Tower, Louvre Museum, Notre-Dame Cathedral, and many more. Enjoy exquisite French cuisine and the charming atmosphere of Parisian streets.</p>
+        </div>
+    </section>
+
+    <!-- Available Flights -->
+    <section id="available-flights" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Available Flights to Paris</h2>
+            <div class="list-group">
+                <div class="list-group-item">
+                    <h5 class="mb-1">Flight 401</h5>
+                    <p class="mb-1">Depart: 8:00 AM - Arrive: 12:00 PM</p>
+                    <small>Airline: Example Airline</small>
+                </div>
+                <div class="list-group-item">
+                    <h5 class="mb-1">Flight 402</h5>
+                    <p class="mb-1">Depart: 2:00 PM - Arrive: 6:00 PM</p>
+                    <small>Airline: Example Airline</small>
+                </div>
+                <div class="list-group-item">
+                    <h5 class="mb-1">Flight 403</h5>
+                    <p class="mb-1">Depart: 6:00 PM - Arrive: 10:00 PM</p>
+                    <small>Airline: Example Airline</small>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Available Hotels -->
+    <section id="available-hotels" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Available Hotels in Paris</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="https://i.pinimg.com/originals/0a/1b/7e/0a1b7e71b3f6483a94d584501c089878.jpg" class="card-img-top" alt="Hotel Paris 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Hotel Paris 1</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="https://img.itinari.com/activity/images/original/35b179f1-2cfa-4771-9fdb-7c8b0c35ba12-10688161_297690273771277_1521274137605622235_o.jpg?ch=DPR&dpr=1&w=1200&h=800&s=a1234f247e09327e0666b38ddb7c03d5" class="card-img-top" alt="Hotel Paris 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Hotel Paris 2</h5>
+                            <p class="card-text">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="https://cdn.decoist.com/wp-content/uploads/2016/12/Terrace-of-Shangri-La-Hotel-Paris.jpg" class="card-img-top" alt="Hotel Paris 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Hotel Paris 3</h5>
+                            <p class="card-text">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-light text-center py-4" id="contacts">
+        <div class="container">
+            <p>&copy; 2024 GlobeTravel. All rights reserved.</p>
+            <p>Contact us: example@example.com | +123456789</p>
+            <p>Follow us on:
+                <a href="#">Facebook</a> |
+                <a href="#">Twitter</a> |
+                <a href="#">Instagram</a>
+            </p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

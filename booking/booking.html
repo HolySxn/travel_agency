@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Booking - Travel Agency</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/main/main.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">GlobeTravel</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" data-lang="navbar-home" href="/main/main.htm">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-lang="navbar-destinations" href="/destinations/destinations.html">Destinations</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" data-lang="navbar-hotel-booking" href="hotel_booking.html">Hotel Booking <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-lang="navbar-flight" href="/flights/flights.html">Flight</a>
+                </li>
+                <li class="nav-item">
+                    <button class="btn btn-outline-primary ml-2" onclick="setLanguage('en')">EN</button>
+                </li>
+                <li class="nav-item">
+                    <button class="btn btn-outline-primary ml-2" onclick="setLanguage('ru')">RU</button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hotel Search -->
+    <section id="hotel-search" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4" data-lang="hotel-search-title">Find Your Perfect Hotel</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <input type="text" class="form-control" placeholder="Destination">
+                </div>
+                <div class="col-md-4">
+                    <input type="date" class="form-control">
+                </div>
+                <div class="col-md-4">
+                    <input type="date" class="form-control">
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-md-4">
+                    <select class="form-control">
+                        <option value="">Number of Guests</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select>
+                </div>
+                <div class="col-md-4">
+                    <select class="form-control">
+                        <option value="">Room Type</option>
+                        <option value="single">Single</option>
+                        <option value="double">Double</option>
+                        <option value="suite">Suite</option>
+                    </select>
+                </div>
+                <div class="col-md-4">
+                    <button class="btn btn-primary btn-block" data-lang="hotel-search-search-btn">Search</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hotel Listings -->
+    <section id="hotel-listings" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4" data-lang="hotel-listings-title">Available Hotels</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="https://s.101hotelscdn.ru/uploads/image/hotel_9/256123/15529364.jpg" class="card-img-top" alt="Hotel 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Hotel 1</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Example card 2 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="https://www.ahstatic.com/photos/a596_ho_00_p_2048x1536.jpg" class="card-img-top" alt="Hotel 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Hotel 2</h5>
+                            <p class="card-text">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Example card 3 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="https://images.divisare.com/images/c_limit,f_auto,h_2000,q_auto,w_3000/v1490958815/kkofaeofhmpw57956lq6/morris-adjmi-architects-mark-mahaney-matthew-williams-jimi-billingsley-wythe-hotel.jpg" class="card-img-top" alt="Hotel 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Hotel 3</h5>
+                            <p class="card-text">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recommendations -->
+    <section id="recommendations" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4" data-lang="recommendations-title">Recommended Hotels</h2>
+            <div class="row">
+                <!-- Example recommendation 1 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="https://3.bp.blogspot.com/-EhIQF7-qEZo/Ux3HQXuo3gI/AAAAAAAADXM/ctxAEEXLkUQ/s1600/radisson-pool.jpg" class="card-img-top" alt="Hotel 4">
+                        <div class="card-body">
+                            <h5 class="card-title">Hotel 4</h5>
+                            <p class="card-text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Example recommendation 2 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                       
+                        <img src="https://www.jacadatravel.com/wp-content/uploads/2016/09/chedi-andermatt-courtyard.jpg" class="card-img-top" alt="Hotel 5">
+                        <div class="card-body">
+                            <h5 class="card-title">Hotel 5</h5>
+                            <p class="card-text">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Example recommendation 3 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="https://www.litorehotel.com/web/ru/images/placeholders/1920x1200-2.jpg" class="card-img-top" alt="Hotel 6">
+                        <div class="card-body">
+                            <h5 class="card-title">Hotel 6</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-light text-center py-4" id="contacts">
+        <div class="container">
+            <p>&copy; 2024 GlobeTravel. All rights reserved.</p>
+            <p data-lang="footer-contact">Contact us: example@example.com | +123456789</p>
+            <p>Follow us on:
+                <a href="#">Facebook</a> |
+                <a href="#">Twitter</a> |
+                <a href="#">Instagram</a>
+            </p>
+        </div>
+    </footer>
+
+    <script src="booking.js"></script>
+</body>
+</html>
