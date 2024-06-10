@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const langData = {
         "en": {
             "navbar-home": "Home",
-            "navbar-destinations": "Destinations",
+            "navbar-destinations": "Tours",
             "navbar-hotel-booking": "Hotel Booking",
             "navbar-flight": "Flight",
             "hotel-search-title": "Find Your Perfect Hotel",
@@ -14,12 +14,6 @@ document.addEventListener('DOMContentLoaded', () => {
             "hotel-search-search-btn": "Search",
             "hotel-listings-title": "Available Hotels",
             "recommendations-title": "Recommended Hotels",
-            "footer-copyright": "&copy; 2024 GlobeTravel. All rights reserved.",
-            "footer-contact": "Contact us: example@example.com | +123456789",
-            "footer-follow": "Follow us on:",
-            "footer-facebook": "Facebook",
-            "footer-twitter": "Twitter",
-            "footer-instagram": "Instagram"
         },
         "ru": {
             "navbar-home": "Главная",
@@ -36,11 +30,6 @@ document.addEventListener('DOMContentLoaded', () => {
             "hotel-listings-title": "Доступные отели",
             "recommendations-title": "Рекомендованные отели",
             "footer-copyright": "&copy; 2024 GlobeTravel. Все права защищены.",
-            "footer-contact": "Свяжитесь с нами: example@example.com | +123456789",
-            "footer-follow": "Подписывайтесь на нас:",
-            "footer-facebook": "Facebook",
-            "footer-twitter": "Twitter",
-            "footer-instagram": "Instagram"
         }
     };
 

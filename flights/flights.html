@@ -17,16 +17,16 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="/main/main.htm">Home</a>
+                    <a class="nav-link" href="/main/main.htm" data-lang="navbar-home">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/destinations/destination.js">Destinations</a>
+                    <a class="nav-link" href="/destinations/destinations.html" data-lang="navbar-destinations">Tours</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/booking/booking.html">Hotel Booking <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="/booking/booking.html" data-lang="navbar-hotel-booking">Hotel Booking <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" href="flights.html">Flight</a>
+                    <a class="nav-link active" href="flights.html" data-lang="navbar-flight">Flight</a>
                 </li>
                 <li class="nav-item">
                     <button class="btn btn-outline-primary ml-2" onclick="setLanguage('en')">EN</button>
@@ -41,19 +41,19 @@
     <!-- Flight Search -->
     <section id="flight-search" class="py-5">
         <div class="container">
-            <h2 class="text-center mb-4">Book Your Flight</h2>
+            <h2 class="text-center mb-4" data-lang="flight-search-title">Book Your Flight</h2>
             <div class="row">
                 <div class="col-md-3">
-                    <input type="text" class="form-control" placeholder="From">
+                    <input type="text" class="form-control" placeholder="From" data-lang="flight-search-from">
                 </div>
                 <div class="col-md-3">
-                    <input type="text" class="form-control" placeholder="To">
+                    <input type="text" class="form-control" placeholder="To" data-lang="flight-search-to">
                 </div>
                 <div class="col-md-3">
-                    <input type="date" class="form-control">
+                    <input type="date" class="form-control" data-lang="flight-search-date">
                 </div>
                 <div class="col-md-3">
-                    <button class="btn btn-primary btn-block">Search Flights</button>
+                    <button class="btn btn-primary btn-block" data-lang="flight-search-button">Search Flights</button>
                 </div>
             </div>
         </div>
@@ -62,55 +62,55 @@
     <!-- Flight Listings by Destination -->
     <section id="flight-listings" class="py-5">
         <div class="container">
-            <h2 class="text-center mb-4">Available Flights</h2>
+            <h2 class="text-center mb-4" data-lang="flight-listings-title">Available Flights</h2>
 
             <!-- Destination: New York -->
             <div class="destination-section">
-                <h3>Flights to New York</h3>
+                <h3 data-lang="flight-listings-ny-title">Flights to New York</h3>
                 <div class="list-group">
                     <div class="list-group-item">
-                        <h5 class="mb-1">Flight 101</h5>
-                        <p class="mb-1">Depart: 8:00 AM - Arrive: 11:00 AM</p>
-                        <small>Airline: Example Airline</small>
+                        <h5 class="mb-1" data-lang="flight-ny-101-title">Flight 101</h5>
+                        <p class="mb-1" data-lang="flight-ny-101-time">Depart: 8:00 AM - Arrive: 11:00 AM</p>
+                        <small data-lang="flight-ny-101-airline">Airline: Example Airline</small>
                     </div>
                     <div class="list-group-item">
-                        <h5 class="mb-1">Flight 102</h5>
-                        <p class="mb-1">Depart: 1:00 PM - Arrive: 4:00 PM</p>
-                        <small>Airline: Example Airline</small>
+                        <h5 class="mb-1" data-lang="flight-ny-102-title">Flight 102</h5>
+                        <p class="mb-1" data-lang="flight-ny-102-time">Depart: 1:00 PM - Arrive: 4:00 PM</p>
+                        <small data-lang="flight-ny-102-airline">Airline: Example Airline</small>
                     </div>
                 </div>
             </div>
 
             <!-- Destination: Los Angeles -->
             <div class="destination-section mt-5">
-                <h3>Flights to Los Angeles</h3>
+                <h3 data-lang="flight-listings-la-title">Flights to Los Angeles</h3>
                 <div class="list-group">
                     <div class="list-group-item">
-                        <h5 class="mb-1">Flight 201</h5>
-                        <p class="mb-1">Depart: 9:00 AM - Arrive: 12:00 PM</p>
-                        <small>Airline: Example Airline</small>
+                        <h5 class="mb-1" data-lang="flight-la-201-title">Flight 201</h5>
+                        <p class="mb-1" data-lang="flight-la-201-time">Depart: 9:00 AM - Arrive: 12:00 PM</p>
+                        <small data-lang="flight-la-201-airline">Airline: Example Airline</small>
                     </div>
                     <div class="list-group-item">
-                        <h5 class="mb-1">Flight 202</h5>
-                        <p class="mb-1">Depart: 3:00 PM - Arrive: 6:00 PM</p>
-                        <small>Airline: Example Airline</small>
+                        <h5 class="mb-1" data-lang="flight-la-202-title">Flight 202</h5>
+                        <p class="mb-1" data-lang="flight-la-202-time">Depart: 3:00 PM - Arrive: 6:00 PM</p>
+                        <small data-lang="flight-la-202-airline">Airline: Example Airline</small>
                     </div>
                 </div>
             </div>
 
             <!-- Destination: London -->
             <div class="destination-section mt-5">
-                <h3>Flights to London</h3>
+                <h3 data-lang="flight-listings-london-title">Flights to London</h3>
                 <div class="list-group">
                     <div class="list-group-item">
-                        <h5 class="mb-1">Flight 301</h5>
-                        <p class="mb-1">Depart: 10:00 AM - Arrive: 8:00 PM</p>
-                        <small>Airline: Example Airline</small>
+                        <h5 class="mb-1" data-lang="flight-london-301-title">Flight 301</h5>
+                        <p class="mb-1" data-lang="flight-london-301-time">Depart: 10:00 AM - Arrive: 8:00 PM</p>
+                        <small data-lang="flight-london-301-airline">Airline: Example Airline</small>
                     </div>
                     <div class="list-group-item">
-                        <h5 class="mb-1">Flight 302</h5>
-                        <p class="mb-1">Depart: 5:00 PM - Arrive: 3:00 AM</p>
-                        <small>Airline: Example Airline</small>
+                        <h5 class="mb-1" data-lang="flight-london-302-title">Flight 302</h5>
+                        <p class="mb-1" data-lang="flight-london-302-time">Depart: 5:00 PM - Arrive: 3:00 AM</p>
+                        <small data-lang="flight-london-302-airline">Airline: Example Airline</small>
                     </div>
                 </div>
             </div>
@@ -130,6 +130,6 @@
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="flights.js"></script>
 </body>
 </html>
